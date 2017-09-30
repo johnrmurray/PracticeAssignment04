@@ -24,7 +24,6 @@ public class ArrayQueue implements Queue {
 
 	public void enqueue(Object item) {
 		if (full()==true) {
-			System.out.println("what");
 			grow_queue();
 		} else {
 			a[tail] = item;
